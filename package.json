@@ -12,7 +12,9 @@
     "dev": "preact watch",
     "lint": "tslint --project src",
     "test": "jest ./tests",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "lint-staged": {
     "*.{js,jsx,css,md,scss}": [
@@ -56,6 +58,7 @@
     "@types/react-router": "^5.0.3",
     "@types/react-router-dom": "^4.3.4",
     "@types/react-transition-group": "^2.9.2",
+    "gh-pages": "^2.0.1",
     "preact": "^10.0.0-rc.0",
     "preact-compat": "^3.18.4",
     "preact-render-to-string": "^4.1.0",
@@ -99,5 +102,6 @@
       "^create-react-class$": "preact-compat/lib/create-react-class",
       "^react-addons-css-transition-group$": "preact-css-transition-group"
     }
-  }
+  },
+  "homepage": "https://utophii.github.io/preact-transition--preact"
 }
