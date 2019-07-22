@@ -1,0 +1,26 @@
+.profile {
+  padding: 56px 20px;
+  width: 100%;
+  opacity: 1;
+  transform: translateY(0em);
+  transition: all 0.38s cubic-bezier(0, 0.4, 0.2, 1);
+  top: 0;
+  position: absolute;
+}
+
+.profile.page-enter {
+  opacity: 0;
+  transform: translateY(2em);
+}
+.profile.page-enter-active {
+  opacity: 1;
+  transform: translateY(0em);
+}
+.profile.page-exit {
+  opacity: 1;
+  transform: translateY(0em);
+}
+.profile.page-exit-active {
+  opacity: 0;
+  transform: translateY(-2em);
+}

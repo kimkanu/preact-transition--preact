@@ -1,0 +1,26 @@
+.home {
+  padding: 56px 20px;
+  width: 100%;
+  opacity: 1;
+  transform: translateY(0em);
+  transition: all 0.38s cubic-bezier(0, 0.4, 0.2, 1);
+  top: 0;
+  position: absolute;
+}
+
+.home.page-enter {
+  opacity: 0;
+  transform: translateY(2em);
+}
+.home.page-enter-active {
+  opacity: 1;
+  transform: translateY(0em);
+}
+.home.page-exit {
+  opacity: 1;
+  transform: translateY(0em);
+}
+.home.page-exit-active {
+  opacity: 0;
+  transform: translateY(-2em);
+}
